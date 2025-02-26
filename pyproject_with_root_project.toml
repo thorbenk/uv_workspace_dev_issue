@@ -1,0 +1,11 @@
+[project]
+name = "wsplay_root"
+version = "0.1.0"
+requires-python = ">=3.12.6"
+dependencies = ["mypkg"]
+
+[tool.uv.workspace]
+members = ["packages/mypkg"]
+
+[tool.uv.sources]
+mypkg = { workspace = true }
